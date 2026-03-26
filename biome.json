@@ -1,0 +1,11 @@
+{
+	"html": {
+		"formatter": {
+			"enabled": true,
+			"indentWidth": 2,
+			"attributePosition": "multiline",
+			"lineWidth": 160,
+			"bracketSameLine": true
+		}
+	}
+}
