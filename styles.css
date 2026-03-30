@@ -9,13 +9,16 @@ body {
 }
 
 #hero {
-    background: url("./images/bg.jpg");
+    background-image: url("./images/bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 95vh;
 }
 
 .certs {
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
     margin-top: 30px;
     padding: 0;
 }
@@ -24,7 +27,6 @@ body {
     width: auto;
     height: auto;
     display: flex;
-    justify-content: flex-end;
 }
 
 .certs img {
