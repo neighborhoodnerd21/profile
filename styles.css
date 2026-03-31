@@ -14,25 +14,27 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 95vh;
+    height: 98vh;
 }
 
 .certs {
     display: flex;
-    margin-top: 30px;
     padding: 0;
 }
 
 .profile-box {
-    width: auto;
-    height: auto;
     display: flex;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
 }
 
 .certs img {
     border: 1px solid whitesmoke;
     border-radius: 8px;
-    width: 120px;
+    width: 100px;
     height: auto;
     display: flex;
     margin: 8px;
@@ -51,4 +53,11 @@ body {
 .card-container3 {
     background-image: url("./images/79065.png");
     background-size: cover;
+}
+
+@media screen and (min-width: 962px) {
+    .profile-img {
+        width: 400px;
+        height: 400px;
+    }
 }
