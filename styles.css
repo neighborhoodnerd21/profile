@@ -14,7 +14,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 98vh;
+    height: 100vh;
 }
 
 .certs {
@@ -55,6 +55,13 @@ body {
 .card-container3 {
     background-image: url("./images/79065.png");
     background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+    #hero {
+        height: 98vh;
+    }
+
 }
 
 @media screen and (min-width: 962px) {
