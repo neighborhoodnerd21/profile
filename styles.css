@@ -1,3 +1,7 @@
+:root {
+    --muted-yellow: #FDFFDD;
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -60,7 +64,7 @@ body {
 
 @media screen and (min-width: 768px) {
     #hero {
-        height: 98vh;
+        height: 96vh;
     }
 
 }
