@@ -20,6 +20,7 @@ body {
 .certs {
     display: flex;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 .profile-box {
