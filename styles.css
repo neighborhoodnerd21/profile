@@ -18,7 +18,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 70vh;
+    height: 85vh;
 }
 
 .profile-img {
@@ -47,7 +47,6 @@ body {
 @media screen and (min-width: 768px) {
     #hero {
         background-image: url("./images/bg/bg.webp");
-        height: 78vh;
     }
 
     .outer-box {
