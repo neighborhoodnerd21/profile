@@ -8,12 +8,12 @@ html {
 }
 
 body {
-    background-color: #141414;
+    background-color: #313131;
     background-repeat: repeat;
 }
 
 #hero {
-    background-image: url("./images/bg.webp");
+    background-image: url("./images/bg/bg-sm.webp");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -33,23 +33,21 @@ body {
 }
 
 .card-container1 {
-    background-image: url("./images/BiHCAzg.jpg");
-    background-size: cover;
+    background: url("./images/cards/opensource.png") no-repeat center/cover;
 }
 
 .card-container2 {
-    background-image: url("./images/terminal.jpg");
-    background-size: cover;
+    background: url("./images/cards/cli.png") no-repeat center/cover;
 }
 
 .card-container3 {
-    background-image: url("./images/79065.png");
-    background-size: cover;
+    background: url("./images/cards/blogger.png") no-repeat center/cover;
 }
 
 @media screen and (min-width: 768px) {
     #hero {
-        height: 76vh;
+        background-image: url("./images/bg/bg.webp");
+        height: 78vh;
     }
 
     .outer-box {
@@ -65,8 +63,8 @@ body {
 
 @media screen and (min-width: 1200px) {
     .profile-img {
-        width: 400px;
-        height: 400px;
+        width: 410px;
+        height: 410px;
         transform: translateY(0);
     }
 
