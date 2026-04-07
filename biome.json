@@ -2,10 +2,14 @@
 	"html": {
 		"formatter": {
 			"enabled": true,
+			"indentStyle": "space",
 			"indentWidth": 2,
 			"attributePosition": "multiline",
-			"lineWidth": 160,
+			"lineWidth": 80,
 			"bracketSameLine": true
+		},
+		"linter": {
+			"enabled": true
 		}
 	}
 }
