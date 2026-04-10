@@ -13,3 +13,11 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+
+const htmlSuccess = await $`zx devScripts/validateHtml.mjs`;
+console.log(htmlSuccess.stdout);
+const cssSuccess = await $`zx devScripts/validateCss.mjs`;
+console.log(cssSuccess.stdout);
+
+console.log("All files validated and ready for commit.");
+process.exit(0);
