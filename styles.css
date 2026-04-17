@@ -8,8 +8,10 @@ html {
 }
 
 body {
-  background-color: #313131;
-  background-repeat: repeat;
+  background-image: url("./images/bg/body-secondary.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #hero {
@@ -29,6 +31,10 @@ body {
 
 .info-box {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+#content {
+  background-color: rgba(234, 201, 72, 0.2);
 }
 
 .card-container1 {
