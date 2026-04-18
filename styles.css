@@ -19,7 +19,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 630px;
+  min-height: 660px;
 }
 
 .profile-img {
@@ -73,8 +73,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .profile-img {
-    width: 410px;
-    height: 410px;
+    width: 80%;
+    height: auto;
     transform: translateY(0);
   }
 }
