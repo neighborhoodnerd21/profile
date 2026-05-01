@@ -22,7 +22,9 @@
 
 const gitStatus = await $`git status --porcelain`;
 
-if (gitStatus === 0) {
+console.log(gitStatus);
+
+if (gitStatus.exitCode === 0) {
   console.log("No uncommitted changes.");
 } else {
   console.log("There are uncommitted changes.");
