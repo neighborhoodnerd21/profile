@@ -9,3 +9,17 @@ This site is served with pages at:
 
 I am also using this project to play with using Google ZX to standardize my
 build process and to learn how to use GitHub Actions for CI/CD.
+
+## Notes:
+
+### vnu & css-validator executables
+
+The executables for vnu.jar and css-validator.jar are created by running the following commands in the terminal:
+Requires Java17+ to be installed and available in the PATH.
+
+```bash
+echo '#!/bin/bash' > myapp
+echo 'exec java -jar "$0" "$@"' >> myapp
+cat myapp.jar >> myapp
+chmod +x myapp
+```
