@@ -12,7 +12,7 @@ const htmlFiles = files.stdout.trim().split("\n");
 // iterate through the array of .html file paths and run the
 // vnu validator on each file, storing the output in an array
 for (const i of htmlFiles) {
-  const output = await $({ nothrow: true })`vnu --errors-only --stdout ${i}`;
+  const output = await $({ nothrow: true })`./bin/vnu --errors-only --stdout ${i}`;
   vnuMsgs = output.stdout.trim().split("\n");
   const checkTime = await $`date -Iseconds`;
   if (vnuMsgs.length === 1 && vnuMsgs[0] === "") {

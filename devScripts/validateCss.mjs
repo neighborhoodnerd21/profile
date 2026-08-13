@@ -13,7 +13,7 @@ const cssFiles = files.stdout.trim().split("\n");
 // vnu validator on each file, storing the output in an array
 for (const i of cssFiles) {
   const path = `${process.cwd()}/${i}`;
-  const output = await $({ nothrow: true })`css-validator file:${path}`.quiet();
+  const output = await $({ nothrow: true })`./bin/css-validator file:${path}`.quiet();
   cssMsgs = output.stdout.trim().split("\n");
   const checkTime = await $`date -Iseconds`;
   if (cssMsgs[1] === "" && cssMsgs[3] === "") {
