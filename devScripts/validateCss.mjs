@@ -4,6 +4,7 @@ var runtimeData = [];
 var cssMsgs = [];
 var logData = [];
 
+console.log(process.cwd());
 // Recursively find all .css files in and below
 // the working directory, then store the paths in an array
 const files = await $`find . -name "*.css"`.quiet();
@@ -12,8 +13,9 @@ const cssFiles = files.stdout.trim().split("\n");
 // iterate through the array of .css file paths and run the
 // vnu validator on each file, storing the output in an array
 for (const i of cssFiles) {
-  const path = `${process.cwd()}/${i}`;
-  const output = await $({ nothrow: true })`./css-validator file:${path}`.quiet();
+  const rootPath = await $`pwd`.quiet();
+  const path = `${rootPath.stdout.trim()}/${i}`;
+  const output = await $({ nothrow: true })`./devScripts/css-validator file:${path}`.quiet();
   cssMsgs = output.stdout.trim().split("\n");
   const checkTime = await $`date -Iseconds`;
   if (cssMsgs[1] === "" && cssMsgs[3] === "") {
